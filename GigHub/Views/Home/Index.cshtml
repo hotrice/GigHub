@@ -3,7 +3,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<ul>
+<ul class="gigs">
     @foreach (var gig in Model)
     {
         <li>
@@ -20,8 +20,8 @@
                     @gig.Artist.Name
                 </span>
                 <span class="genre">
-                    
-</span>
+                    @gig.Genre.Name                    
+                </span>
             </div>
         </li>
     }
